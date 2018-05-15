@@ -1,0 +1,304 @@
+
+body {
+  width: 100%;
+  font: 14px "Helvetica Neue",Arial,Helvetica,sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  background-image: url(https://d78fikflryjgj.cloudfront.net/images/50b4ebc64391dc394a38e73aed57f0e2/header-logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #026AA7;
+  overflow: hidden;
+  padding: 5px 8px;
+  z-index: 10;
+  box-shadow: 0 1px 1px rgba(0,0,0,.3);
+  height: 30px;
+}
+/* Main  trellos header  */
+.board {
+  width: 87px;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  top: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.board i {
+  position: absolute;
+  bottom: 7px;
+  left: 5px;
+  font-size: 18px;
+}
+
+.board p {
+  position: relative;
+  bottom: 20px;
+  left: 25px;
+}
+
+.search {
+  display: inline-block;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  background-color: rgba(255,255,255,.3);
+  color: rgba(255,255,255,.5);
+  padding-right: 30px;
+  padding-left: 8px;
+  border: none;
+  font-size: 13px;
+  height: 30px;
+  min-height: 30px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 120px;
+}
+
+.fa-search{
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  left: 310px;
+  border: none;
+}
+
+.logo {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  right: 650px;
+  filter: opacity(60%);
+}
+
+.add {
+  display: inline-block;
+  width: 20px;
+  margin-right: 10px;
+  position: absolute;
+  top: 5px;
+  right: 150px;
+  height: 30px;
+  border-radius: 3px;
+
+}
+
+.add i {
+  padding-left: 9px;
+}
+
+.info {
+  display: inline-block;
+  width: 20px;
+  margin-right: 10px;
+  position: absolute;
+  top: 5px;
+  right: 100px;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+
+.info i {
+  border: 2px solid  #f3f3f3;
+  border-radius: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.bell {
+  display: inline-block;
+  width: 10px;
+  margin-right: 10px;
+  position: absolute;
+  top: 5px;
+  right: 60px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.bell i {
+  padding-left: 8px;
+}
+
+.profile {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  right: 2%;
+  bottom: 8%;
+}
+
+.profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+header .btn {
+  background-color: rgba(255,255,255,.3);
+  color: #f3f3f3;
+  line-height: 30px;
+  margin-right: 8px;
+  min-width: 30px;
+  user-select: none;;
+}
+#tittle-board {
+  display: inline-block;
+  position: absolute;
+  top: 8%;
+  color: #026AA7;
+  font-size: 1em;
+}
+.fa-star-o {
+  display: inline-block;
+  position: absolute;
+  top: 11.5%;
+  left: 12%;
+  color: #026AA7;
+}
+#Private-acount{
+  display: inline-block;
+  position: absolute;
+  top: 8%;
+  left: 15%;
+  color: #026AA7;
+}
+.fa-lock{
+  display: inline-block;
+  position: absolute;
+  top: 11.5%;
+  left: 14%;
+  color: #026AA7;
+}
+#containerForm{
+  display: block;
+  position: absolute;
+  top: 12%;
+}
+
+.hover:hover {
+background-color: rgba(255,255,255,.2);
+color: #fff;
+}
+
+
+#searchov:hover {
+  background-color: rgba(255,255,255,.4);
+}
+
+#btnAdd {
+  margin-top: 60px;
+  margin-left: 20px;
+  background-color: rgba(0,0,0,.15);
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  width: 270px;
+  color: #f3f3f3;
+  text-align: left;
+  filter: opacity(80%);
+  padding-left: 5px;
+  z-index: 10;
+}
+
+button#btnAdd:hover {
+  background-color: rgba(0,0,0,.3);
+  cursor: pointer;
+}
+
+#firstInput{
+  height: 20px;
+  width: 250px;
+  background: rgba(0,0,0,.05);
+  border-color: #aaa;
+  box-shadow: inset 0 1px 8px rgba(0,0,0,.15);
+  border-radius: 3px;
+  padding: 7px;
+  border: 1px solid #CDD2D4;
+  color: #333;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0;
+  display: block;
+}
+
+#btnSave {
+  background-color: #5AAC44;
+  box-shadow: 0 1px 0 #519839;
+  color: #fff;
+  float: left;
+  min-height: 30px;
+  height: 30px;
+  margin-top: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 6px 4px 4px 4px;
+  padding: 5px 1pc;
+  border: none;
+  border-radius: 3px;
+}
+
+#btnSave:hover {
+  background-color: #519839;
+  cursor: pointer;
+}
+
+.fa.fa-times {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #999;
+  line-height: 30px;
+  background-color: transparent;
+}
+
+.fa-times:hover {
+  color: #333;
+}
+
+#firstForm {
+  margin-top: 60px;
+  margin-left: 20px;
+  height: auto;
+  min-height: 30px;
+  border-radius: 3px;
+  padding: 4px;
+  background-color: #E2E4E6;
+  margin-right: 10px;
+  width: 275px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+}
+.show {
+  display: none;
+}
+.hidding-div{
+  display: none
+}
+.showing-div {
+  display: block;
+}
+#add-task {
+  display: none;
+}
