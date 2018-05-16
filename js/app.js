@@ -21,23 +21,50 @@ saveText.addEventListener('click',function(){
   var saveOnHtml=document.getElementById('adding-elements');
   var comments = document.getElementById('firstInput').value;
   document.getElementById('firstInput').value = '';
+    if(comments.length == 0 || comments == null) {
+		alert('Debes ingresar un mensaje');
+    return false;
+    }
   var newComments = document.createElement('div');
   newComments.classList.add('elements');
   var textNewComment = document.createTextNode(comments);
   var cont = document.getElementById('adding-elements');
   var taks= document.createTextNode('Añadir una tarjeta...')
+  var taksContenedor= document.createElement('button');
   var contenedorElemento = document.createElement('p');
   newComments.appendChild(textNewComment);
   newComments.appendChild(contenedorElemento)
   cont.appendChild(newComments);
-  contenedorElemento.appendChild(taks);
-  taks.appendChild(contenedorElemento);
+  taksContenedor.appendChild(taks);
+  newComments.appendChild(taksContenedor);
+  //contenedorElemento.appendChild(taks);
+  //taks.appendChild(contenedorElemento);
+  //contenedorElemento.appendChild(taks);
   contenedorElemento.appendChild(textNewComment);
- saveOnHtml.appendChild(newComments);
- //taks.addEventListener('click'function(){
+  saveOnHtml.appendChild(newComments);
+  taksContenedor.classList.add('card-button');
+  });
+  
+  //taksContenedor.addEventListener('click',function(){
+  /*var taksContenedor= document.createElement('button');
+  var conteinerButton= document.getElementById('adding-list');
+  conteinerButton.appendChild(taksContenedor);
+  //var newtaksContenedor = document.createElement('input');
+  var card= document.createTextNode('input').value;
+  var cardBlock= document.createElement('p');
+  var cardBlockContainer= document.createElement('div');
+  cardBlockContainer.classList.add('elements');
+  //card.appendChild(newtaksContenedor);
+  cardBlock.appendChild(card);
+  cardBlockContainer.appendChild(cardBlock);
+saveOnHtml.appendChild(cardBlockContainer);*/
 
- //});
-});
+//});
+
+
+
+
+
 
 /*
 

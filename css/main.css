@@ -75,14 +75,6 @@ header {
   border: none;
 }
 
-.logo {
-  text-align: center;
-  display: inline-block;
-  position: absolute;
-  right: 650px;
-  filter: opacity(60%);
-}
-
 .add {
   display: inline-block;
   width: 20px;
@@ -302,8 +294,12 @@ button#btnAdd:hover {
 #add-task {
   display: none;
 }
-#adding-elements{
+#adding-elements {
   display: block;
+}
+#adding-list{
+  width: 7em;
+  height: 2em
 }
 .elements {
   background: #E2E4E6;
@@ -312,10 +308,25 @@ button#btnAdd:hover {
   margin-left: 8%;
 }
 
-p{
+p {
   height: 1.5em;
-  background: rgba(0,0,0,.05);
-  border-color: #aaa;
-  box-shadow: inset 0 1px 8px rgba(0,0,0,.15);
+  background: #E2E4E6;
   text-align: left;
+  top: 15%;
+}
+.card-button {
+  text-decoration: none;
+  border: none;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3em;
+  color: #888A8B;
+  background: #CDD2D4;
+  text-align: left;
+  font: 14px "Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+.card-button:hover {
+  color: #333;
+  text-decoration:underline;
 }
