@@ -305,6 +305,17 @@ button#btnAdd:hover {
 #adding-elements{
   display: block;
 }
-p {
+.elements {
   background: #E2E4E6;
+  display: block;
+  margin-top: 5%;
+  margin-left: 8%;
+}
+
+p{
+  height: 1.5em;
+  background: rgba(0,0,0,.05);
+  border-color: #aaa;
+  box-shadow: inset 0 1px 8px rgba(0,0,0,.15);
+  text-align: left;
 }
