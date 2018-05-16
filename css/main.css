@@ -302,3 +302,9 @@ button#btnAdd:hover {
 #add-task {
   display: none;
 }
+#adding-elements{
+  display: block;
+}
+p {
+  background: #E2E4E6;
+}
