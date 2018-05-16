@@ -32,6 +32,8 @@ saveText.addEventListener('click',function(){
   var taks= document.createTextNode('Añadir una tarjeta...')
   var taksContenedor= document.createElement('button');
   var contenedorElemento = document.createElement('p');
+  contenedorElemento.classList.add('paragraph');
+  contenedorElemento.id="textList";
   newComments.appendChild(textNewComment);
   newComments.appendChild(contenedorElemento)
   cont.appendChild(newComments);
@@ -43,8 +45,28 @@ saveText.addEventListener('click',function(){
   contenedorElemento.appendChild(textNewComment);
   saveOnHtml.appendChild(newComments);
   taksContenedor.classList.add('card-button');
+
+  taksContenedor.addEventListener('click', function(){
+    taksContenedor.style.display = "none";
+    var addingParagraph= document.getElementById('textList');
+    var addingList= document.getElementById('card-button');
+    var block= document.createElement("input");
+    var blockIn= document.createElement("textarea");
+    var lineBreak= document.createElement("br");
+    var newBlock= document.createElement('div');
+    newBlock.id= "Contenedor";
+    newBlock.appendChild(addingParagraph);
+    newBlock.appendChild(block);
+    newBlock.appendChild(lineBreak);
+    newBlock.appendChild(blockIn);
+    var saveListOnHtml=document.getElementById('adding-elements');
+    saveListOnHtml.appendChild(newBlock);
+    var buttonAñadir= document.createElement(button);
   });
-  
+
+  });
+
+
   //taksContenedor.addEventListener('click',function(){
   /*var taksContenedor= document.createElement('button');
   var conteinerButton= document.getElementById('adding-list');

@@ -308,7 +308,7 @@ button#btnAdd:hover {
   margin-left: 8%;
 }
 
-p {
+.paragraph {
   height: 1.5em;
   background: #E2E4E6;
   text-align: left;
@@ -329,4 +329,7 @@ p {
 .card-button:hover {
   color: #333;
   text-decoration:underline;
+}
+#Contenedor{
+  background-color: blue;
 }
