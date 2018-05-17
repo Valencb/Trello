@@ -13,7 +13,7 @@ Al igual que en el reto anterior, puedes usar tu propio estilo o seguir la del s
 
 Se creo la mayoria de elementos de html desde js y se dieron diseño con CSS.
 
-![gifTrello](asset\imagen\Trello.png);
+![gif](asset/imagen/Trello.png);
 
 ## VERSIÓN 0.0.1
 Se mostrará el texto "Añadir una lista ...".
