@@ -267,7 +267,7 @@ button#btnAdd:hover {
   color: #333;
 }
 
-#firstForm {
+#firstForm, #adding-elements {
   margin-top: 60px;
   margin-left: 20px;
   height: auto;
@@ -301,12 +301,12 @@ button#btnAdd:hover {
   width: 7em;
   height: 2em;
 }
-.elements {
+/*.elements {
   background: #E2E4E6;
   display: block;
   margin-top: 5%;
   margin-left: 8%;
-}
+}*/
 
 .paragraph {
   height: 1.5em;
@@ -332,15 +332,30 @@ button#btnAdd:hover {
 }
 #Contenedor{
   background-color: #E2E4E6;
-  position: absolute;
-  left: 9%;
   width: 18em;
-  height: 8em;
+  height: auto;
 }
 #white {
   width: 18em;
-  height: 2em;
-  position: absolute;
+  height: auto;
+  margin-left: 5%;
   left: 5%;
   top: 30%;
+  color: blue;
+}
+#adding-elements {
+margin-top: 60px;
+margin-left: 20px;
+height: auto;
+min-height: 30px;
+border-radius: 3px;
+padding: 4px;
+background-color: #E2E4E6;
+margin-right: 10px;
+width: 275px;
+box-sizing: border-box;
+display: inline-block;
+vertical-align: top;
+white-space: nowrap;
+display: none;
 }

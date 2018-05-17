@@ -1,11 +1,4 @@
 
-/*var addTaskList = document.getElementById('taks');
-  addTaskList.addEventListener('click',function(){
-    var hidding = document.getElementById('btnAdd');
-    hidding.style.display = 'none';
-    var show = document.getElementById('firstForm');
-    show.style.display= 'block';
-});*/
 /*first version of trello text to show adding at list, Click function
 to hide text and show form*/
 var addTaskList = document.getElementById('btnAdd');
@@ -19,6 +12,7 @@ newTasklist.style.display = "block";
 var saveText= document.getElementById('btnSave');
 saveText.addEventListener('click',function(){
   var saveOnHtml=document.getElementById('adding-elements');
+  saveOnHtml.style.display= "block";
   var comments = document.getElementById('firstInput').value;
   document.getElementById('firstInput').value = '';
     if(comments.length == 0 || comments == null) {
@@ -32,22 +26,23 @@ saveText.addEventListener('click',function(){
   var taks= document.createTextNode('Añadir una tarjeta...')
   var taksContenedor= document.createElement('button');
   var contenedorElemento = document.createElement('p');
+  var generalContainer= document.createElement('div');
+  generalContainer.id= "boxContainer";
   contenedorElemento.classList.add('paragraph');
   contenedorElemento.id="textList";
   newComments.appendChild(textNewComment);
-  newComments.appendChild(contenedorElemento)
+  newComments.appendChild(contenedorElemento);
+  newComments.appendChild(generalContainer);
   cont.appendChild(newComments);
   taksContenedor.appendChild(taks);
   newComments.appendChild(taksContenedor);
-  //contenedorElemento.appendChild(taks);
-  //taks.appendChild(contenedorElemento);
-  //contenedorElemento.appendChild(taks);
   contenedorElemento.appendChild(textNewComment);
   saveOnHtml.appendChild(newComments);
   taksContenedor.classList.add('card-button');
 
   taksContenedor.addEventListener('click', function(){
     taksContenedor.style.display = "none";
+    var desing= document.getElementById("boxContainer")
     var addingParagraph= document.getElementById('textList');
     var addingList= document.getElementById('card-button');
     var blockIn= document.createElement("textarea");
@@ -57,7 +52,8 @@ saveText.addEventListener('click',function(){
     newBlock.id= "Contenedor";
     newBlock.appendChild(addingParagraph);
     newBlock.appendChild(lineBreak);
-    newBlock.appendChild(blockIn);
+    desing.appendChild(blockIn);
+    newBlock.appendChild(desing);
     var saveListOnHtml=document.getElementById('adding-elements');
     saveListOnHtml.appendChild(newBlock);
     var buttonAñadir= document.createElement('button');
@@ -67,17 +63,30 @@ saveText.addEventListener('click',function(){
     var x= document.createElement('i');
     x.classList.add('fa','fa-times','times');
     newBlock.appendChild(x);
+    var blockInFocus= document.getElementById("white").focus();
+
     var addingButton=document.getElementById('Adding');
-    /*addingButton.addEventListener('click',function(){
+    addingButton.addEventListener('click',function txt() {
       var saveText = document.getElementById('white').value;
+      document.getElementById('white').value = '';
+      console.log(saveText);
+      if(saveText.length === 0){
+      var funtionButton= document.getElementById('Adding');
+      funtionButton.removeEventListener("click", txt);
+      } else {
+      var paragraphAfter=document.getElementById('textList')
       var containerSaveText= document.getElementById('Contenedor');
       var note = document.createTextNode(saveText);
-      var noteText=document.createElement('input');
+      var noteText=document.createElement('p');
       noteText.id="note";
       var containerNoteText= document.createElement('div');
       noteText.appendChild(note);
       containerNoteText.appendChild(noteText);
       containerSaveText.appendChild(containerNoteText);
+      var lineBreak= document.createElement("br");
+      containerSaveText.insertBefore(containerNoteText, paragraphAfter);
+      }
+    });
 
       /*
       function textShowedUp() {
