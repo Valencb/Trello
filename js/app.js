@@ -42,18 +42,22 @@ saveText.addEventListener('click',function(){
 
   taksContenedor.addEventListener('click', function(){
     taksContenedor.style.display = "none";
-    var desing= document.getElementById("boxContainer")
+    var tittle = document.createElement('h2');
+    var tittleList=document.createTextNode('Lista de tareas...');
     var addingParagraph= document.getElementById('textList');
-    var addingList= document.getElementById('card-button');
     var blockIn= document.createElement("textarea");
     blockIn.id="white";
+    var desing= document.getElementById("boxContainer")
+    var addingList= document.getElementById('card-button');
     var lineBreak= document.createElement("br");
     var newBlock= document.createElement('div');
-    newBlock.id= "Contenedor";
+    desing.appendChild(tittle);
+    tittle.appendChild(tittleList);
     newBlock.appendChild(addingParagraph);
     newBlock.appendChild(lineBreak);
-    desing.appendChild(blockIn);
     newBlock.appendChild(desing);
+    newBlock.id= "Contenedor";
+    desing.appendChild(blockIn);
     var saveListOnHtml=document.getElementById('adding-elements');
     saveListOnHtml.appendChild(newBlock);
     var buttonAñadir= document.createElement('button');
@@ -85,32 +89,8 @@ saveText.addEventListener('click',function(){
       containerSaveText.appendChild(containerNoteText);
       var lineBreak= document.createElement("br");
       containerSaveText.insertBefore(containerNoteText, paragraphAfter);
-      }
+      };
     });
-
-      /*
-      function textShowedUp() {
-    var valueTextArea = document.getElementById("areaText").value;
-
-    if(valueTextArea.length === 0) {//Nota: se necesita recargar la página cuando se ingresa un texto despúes de haber pulsado el botón "añadir"
-        var butt = document.getElementById("buttonAdd");
-        butt.removeEventListener("click", textShowedUp);
-    } else {
-        var input2 = document.createElement("p");
-        var textCard = document.createTextNode(valueTextArea);
-        input2.appendChild(textCard);
-
-        var targ = document.getElementById("targ2");
-
-        var insert = document.getElementById("areaText");
-
-        targ.insertBefore(input2, insert);
-    }
-}
-
-
-
-})*/
 
   });
 

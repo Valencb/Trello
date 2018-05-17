@@ -5,6 +5,7 @@ body {
   font-weight: 600;
   font-size: 15px;
   width: 100%;
+  display: inline-block;
 }
 
 header {
@@ -17,11 +18,11 @@ header {
   left: 0;
   right: 0;
   background-color: #026AA7;
-  overflow: hidden;
   padding: 5px 8px;
   z-index: 10;
   box-shadow: 0 1px 1px rgba(0,0,0,.3);
   height: 30px;
+  display: inline-block;
 }
 /* Main  trellos header  */
 .board {
@@ -177,7 +178,7 @@ header .btn {
   color: #026AA7;
 }
 #containerForm{
-  display: block;
+  display: inline-block;
   position: absolute;
   top: 12%;
 }
@@ -281,6 +282,7 @@ button#btnAdd:hover {
   display: inline-block;
   vertical-align: top;
   white-space: nowrap;
+  float: left;
 }
 .show {
   display: none;
@@ -358,4 +360,5 @@ display: inline-block;
 vertical-align: top;
 white-space: nowrap;
 display: none;
+float: left;
 }
