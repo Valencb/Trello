@@ -50,18 +50,59 @@ saveText.addEventListener('click',function(){
     taksContenedor.style.display = "none";
     var addingParagraph= document.getElementById('textList');
     var addingList= document.getElementById('card-button');
-    var block= document.createElement("input");
     var blockIn= document.createElement("textarea");
+    blockIn.id="white";
     var lineBreak= document.createElement("br");
     var newBlock= document.createElement('div');
     newBlock.id= "Contenedor";
     newBlock.appendChild(addingParagraph);
-    newBlock.appendChild(block);
     newBlock.appendChild(lineBreak);
     newBlock.appendChild(blockIn);
     var saveListOnHtml=document.getElementById('adding-elements');
     saveListOnHtml.appendChild(newBlock);
-    var buttonAñadir= document.createElement(button);
+    var buttonAñadir= document.createElement('button');
+    buttonAñadir.id="Adding";
+    buttonAñadir.innerHTML = "Añadir";
+    newBlock.appendChild(buttonAñadir);
+    var x= document.createElement('i');
+    x.classList.add('fa','fa-times','times');
+    newBlock.appendChild(x);
+    var addingButton=document.getElementById('Adding');
+    /*addingButton.addEventListener('click',function(){
+      var saveText = document.getElementById('white').value;
+      var containerSaveText= document.getElementById('Contenedor');
+      var note = document.createTextNode(saveText);
+      var noteText=document.createElement('input');
+      noteText.id="note";
+      var containerNoteText= document.createElement('div');
+      noteText.appendChild(note);
+      containerNoteText.appendChild(noteText);
+      containerSaveText.appendChild(containerNoteText);
+
+      /*
+      function textShowedUp() {
+    var valueTextArea = document.getElementById("areaText").value;
+
+    if(valueTextArea.length === 0) {//Nota: se necesita recargar la página cuando se ingresa un texto despúes de haber pulsado el botón "añadir"
+        var butt = document.getElementById("buttonAdd");
+        butt.removeEventListener("click", textShowedUp);
+    } else {
+        var input2 = document.createElement("p");
+        var textCard = document.createTextNode(valueTextArea);
+        input2.appendChild(textCard);
+
+        var targ = document.getElementById("targ2");
+
+        var insert = document.getElementById("areaText");
+
+        targ.insertBefore(input2, insert);
+    }
+}
+
+
+
+})*/
+
   });
 
   });

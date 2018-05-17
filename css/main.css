@@ -228,7 +228,7 @@ button#btnAdd:hover {
   display: block;
 }
 
-#btnSave {
+#btnSave, #Adding {
   background-color: #5AAC44;
   box-shadow: 0 1px 0 #519839;
   color: #fff;
@@ -247,7 +247,7 @@ button#btnAdd:hover {
   border-radius: 3px;
 }
 
-#btnSave:hover {
+#btnSave:hover, #Adding:hover {
   background-color: #519839;
   cursor: pointer;
 }
@@ -299,7 +299,7 @@ button#btnAdd:hover {
 }
 #adding-list{
   width: 7em;
-  height: 2em
+  height: 2em;
 }
 .elements {
   background: #E2E4E6;
@@ -331,5 +331,16 @@ button#btnAdd:hover {
   text-decoration:underline;
 }
 #Contenedor{
-  background-color: blue;
+  background-color: #E2E4E6;
+  position: absolute;
+  left: 9%;
+  width: 18em;
+  height: 8em;
+}
+#white {
+  width: 18em;
+  height: 2em;
+  position: absolute;
+  left: 5%;
+  top: 30%;
 }
