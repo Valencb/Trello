@@ -1,8 +1,9 @@
 # Trello
 
-En este reto, vamos a replicar el tablero de Trello, para ello vamos a seguir un flujo de versiones que te guiarán en dónde enfocarte desde un inicio.
+In this challenge, we will replicate Trello's dashboard, for it we will follow the version flow that will guide you where to focus from the beggining.
 
-Al igual que en el reto anterior, puedes usar tu propio estilo o seguir la del sitio original. A continuación puedes ver como debe quedar:
+As in the last challenge, you can use your own style or keep using the original one. Next you can see how it should be done:
+
 
 ## Versiones
 1. version 0.0.1
@@ -11,21 +12,23 @@ Al igual que en el reto anterior, puedes usar tu propio estilo o seguir la del s
 4. version 0.0.4
 5. version 0.0.5
 
-Se creo la mayoria de elementos de html desde js y se dieron diseño con CSS.
+Most of the elements where created in HTML from JS and design was given with CSS.
+
 
 ![gif](asset/imagen/Trello.png);
 
-## VERSIÓN 0.0.1
-Se mostrará el texto "Añadir una lista ...".
-Al hacer click se debe ocultar el texto y mostrar un formulario.
-El formulario está conformado por un input y un botón para que pueda añadir tareas a tu lista.
-## VERSIÓN 0.0.2
-Al dar click en el botón de "Guardar", se mostrará un nuevo cuadro donde estará el nombre de la lista agregada.
-Mostrar un texto de "Añadir una tarea" dentro de la lista.
-## VERSIÓN 0.0.3
-Al dar click en "Añadir una tarea", deberá mostrar un formulario con un textarea y un botón que diga "Añadir".
-## VERSIÓN 0.0.4
-Poner focus al input al dar click en "Agregar nueva tarea".
-Al dar click en el botón de "Añadir", deberá aparecer el texto de la tarea debajo del título de la lista.
-##VERSIÓN 0.0.5
-Mostrar el formulario nuevamente debajo de la última tarea añadida.
+
+Version 0.0.1
+Text "Añadir una lista.." will be shown. Once click is done text should be hidden and show a formulary. The formulary will be conformed by an input and a button so you can add tasks to your list.
+
+Version 0.0.2
+Clicking "Guardar" button a new box will be shown with the added list's name. It will "Añadir una tarea" text inside the list.
+
+Version 0.0.3
+Clicking "Añadir una tarea" should show a formulary with a textarea and a button that says "Añadir".
+
+Version 0.0.4
+Insert focus in the input by once "Agregar una tarea" is clicked. Once the "Añadir" button is clicked, the text should appear below the list's name.
+
+Version 0.0.5
+Show again the formulary below the last added list.

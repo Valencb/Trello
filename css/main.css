@@ -362,3 +362,8 @@ white-space: nowrap;
 display: none;
 float: left;
 }
+#add-task2{
+  display: none;
+  position: absolute;
+  left: 120%;
+}

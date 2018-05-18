@@ -8,9 +8,15 @@ function showTaks(){
 addTaskList.style.display = "none";
 newTasklist.style.display = "block";
 };
-/*Save function button and create a new div with the input value*/
+/*"Save Button Function"; When the button is clicked it Creates a new div
+with the input value inside, and also showing div higgind on HTML with the next elements
+inside(form/input/button)*/
 var saveText= document.getElementById('btnSave');
 saveText.addEventListener('click',function(){
+  var hiddingText2=document.getElementById('add-task2');
+  var showingOnHTML=document.getElementById('add-task');
+  hiddingText2.style.display= "block";
+  showingOnHTML.style.display= "none";
   var saveOnHtml=document.getElementById('adding-elements');
   saveOnHtml.style.display= "block";
   var comments = document.getElementById('firstInput').value;
@@ -67,13 +73,15 @@ saveText.addEventListener('click',function(){
     var x= document.createElement('i');
     x.classList.add('fa','fa-times','times');
     newBlock.appendChild(x);
+    //pointer inside input block
     var blockInFocus= document.getElementById("white").focus();
-
     var addingButton=document.getElementById('Adding');
+    /*Function save the input value of "lista de tareas, verifies if the input area
+    is empty with the save button, create a div to container.*/
     addingButton.addEventListener('click',function txt() {
       var saveText = document.getElementById('white').value;
       document.getElementById('white').value = '';
-      console.log(saveText);
+      //console.log(saveText);
       if(saveText.length === 0){
       var funtionButton= document.getElementById('Adding');
       funtionButton.removeEventListener("click", txt);
